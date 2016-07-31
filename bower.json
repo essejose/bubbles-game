@@ -1,0 +1,20 @@
+{
+  "name": "bubbles",
+  "authors": [
+    "essejose <ze_pk2@hotmail.com>"
+  ],
+  "description": "game bubbles",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}
