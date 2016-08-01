@@ -13,6 +13,8 @@ var BubbleShoot = window.BubbleShoot || {};
 	 	//BubbleShoot.ui.hideDialog();
 		};
 	};
+	
+	
 
   return Game;
 
