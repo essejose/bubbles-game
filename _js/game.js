@@ -11,8 +11,9 @@ var BubbleShoot = window.BubbleShoot || {};
 	};
 	var startGame = function(){
 		$(".but_start_game").unbind("click");
-	 	//BubbleShoot.ui.hideDialog();
+	 	 BubbleShoot.ui.hideDialog();
 	 	curBubble = getNextBubble();
+	 	$("#game").bind("click",clickGameScreen);
 		};
 	};
 
@@ -24,7 +25,21 @@ var BubbleShoot = window.BubbleShoot || {};
 	};
 
 	
-	
+	var clickGameScreen = function(e){
+		var angle = BubbleShoot.ui.getBubbleAngle(curBubble.getSprite(),e);
+		var duration = 750;
+		var distance = 1000;
+		var distX = Math.sin(angle) * distance;
+		var distY = Math.cos(angle) * distance;
+		var bubbleCoords = BubbleShoot.ui.getBubbleCoords(curBubble.
+		getSprite());
+		var coords = {
+		x : bubbleCoords.left + distX,
+		y : bubbleCoords.top - distY
+		};
+	 	BubbleShoot.ui.fireBubble(curBubble,coords,duration);
+ 
+	};
 
   return Game;
 
