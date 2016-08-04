@@ -9,13 +9,6 @@ var BubbleShoot = window.BubbleShoot || {};
 	 $(".but_start_game").bind("click",startGame);
 	 
 	};
-	var startGame = function(){
-		$(".but_start_game").unbind("click");
-	 	 BubbleShoot.ui.hideDialog();
-	 	curBubble = getNextBubble();
-	 	$("#game").bind("click",clickGameScreen);
-		};
-	};
 
 	var getNextBubble = function(){
 	var bubble = BubbleShoot.Bubble.create();
@@ -24,6 +17,17 @@ var BubbleShoot = window.BubbleShoot || {};
 		return bubble;
 	};
 
+
+
+	var startGame = function(){
+		$(".but_start_game").unbind("click");
+	 	 BubbleShoot.ui.hideDialog();
+	 	 curBubble = getNextBubble();
+	 	$("#game").bind("click",clickGameScreen);
+		};
+	};
+
+	
 	
 	var clickGameScreen = function(e){
 		var angle = BubbleShoot.ui.getBubbleAngle(curBubble.getSprite(),e);
