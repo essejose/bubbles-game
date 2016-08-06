@@ -4,10 +4,12 @@ var BubbleShoot = window.BubbleShoot || {};
 
  var Game = function(){
  	var curBubble;
+ 	var numBubbles;
+	var MAX_BUBBLES = 70;
 	this.init = function(){
 
 	 $(".but_start_game").bind("click",startGame);
-	 
+	 numBubbles = MAX_BUBBLES;
 	};
 
 	var getNextBubble = function(){
