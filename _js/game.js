@@ -1,3 +1,7 @@
+
+// objeto principal do game
+
+
 var BubbleShoot = window.BubbleShoot || {};
 
  BubbleShoot.Game = (function($){
@@ -43,7 +47,7 @@ var BubbleShoot = window.BubbleShoot || {};
 		x : bubbleCoords.left + distX,
 		y : bubbleCoords.top - distY
 		};
-	 	BubbleShoot.ui.fireBubble(curBubble,coords,duration);
+	 	//BubbleShoot.ui.fireBubble(curBubble,coords,duration);
  
 	};
 
