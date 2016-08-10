@@ -36,5 +36,7 @@ BubbleShoot.Game = (function($){
 			BubbleShoot.ui.fireBubble(curBubble,coords,duration);
 		};
 	};
+
 	return Game;
 })(jQuery);
+ 
