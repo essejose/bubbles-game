@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Bubble Shooter</title>
-	<link rel="stylesheet" href="_css/main.css"> 
-	<link rel="stylesheet" href="_css/game.css"> 
-<body>
-	<div id="page">
-		<div id="top_bar"></div>
-		<div id="game">
-			<div id="board"></div>
-			</div>
-		<div id="footer_bar"></div>
-		
-		<div id="start_game" class="dialog">
-			<div id="start_game_message">
-				<h2>Start a new game</h2>
-			</div>
-			<div class="but_start_game button">
-				New Game
-			</div>
-		</div>
-	</div>
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="_js/ui.js"></script>
-	<script src="_js/bubble.js"></script>
-	<script src="_js/collision-detector.js"></script>
-	<script src="_js/game.js"></script>
-	<script>
-	$(function(){
-		var game = new BubbleShoot.Game();
-		game.init();
-		})
-	</script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>
+         Bubble Shooter
+      </title>
+      <link rel="stylesheet" href="_css/main.css">
+      <link rel="stylesheet" href="_css/game.css">
+   <body>
+      <div id="page">
+         <div id="top_bar">
+         </div>
+         <div id="game">
+            <div id="board">
+            </div>
+         </div>
+         <div id="footer_bar">
+         </div>
+         <div id="start_game" class="dialog">
+            <div id="start_game_message">
+               <h2>
+                  Start a new game
+               </h2>
+            </div>
+            <div class="but_start_game button">
+               New Game
+            </div>
+         </div>
+      </div>
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="_js/ui.js"></script>
+      <script src="_js/bubble.js"></script>
+      <script src="_js/collision-detector.js"></script>
+      <script src="_js/game.js"></script>
+      <script>
+         $(function() {
+         var game = new BubbleShoot.Game();
+         game.init();
+         })
+      </script>
+   </body>
 </html>
