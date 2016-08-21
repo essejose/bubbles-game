@@ -1,2 +1,3 @@
 # bubbles-game
-The game :D
+
+Jogo criado em html css e javascript
